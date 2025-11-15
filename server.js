@@ -19,11 +19,12 @@ wss.on('connection', (ws, req) => {
     // Extract username from the query parameters
     const urlParams = new URLSearchParams(req.url.split('?')[1]);
     const username = urlParams.get('username');
+    const token = urlParams.get('token');
 
     if (username) {
         // Create a new connection handler for this connection
-        console.log("user connected ",username)
-        ConnectionHandler.handleConnection(username,ws)
+        console.log("user connected ",username, token)
+        ConnectionHandler.handleConnection(token,username,ws)
         ws.send(JSON.stringify({type:"welcome"}))
     } else {
         // If no username is provided in query params, close the connection
@@ -32,6 +33,6 @@ wss.on('connection', (ws, req) => {
 });
 
 // Start the HTTP server on port 8080
-server.listen(8080, () => {
+server.listen(3007, () => {
     console.log('Server running on http://localhost:8080');
 });
