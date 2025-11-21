@@ -8,11 +8,6 @@ This project demonstrates how to build a simple video call application using the
 4. **iOS Client** – (Placeholder for upcoming iOS development).  
 
 ---
-## 🎥 Video Tutorial & Playlist  
-
-📺 **Playlist for this Project:** [CodeWithKael Playlist](https://youtube.com/playlist?list=PLFelST8t9nqgo5vQXQOl4xmySNO0MFLas&si=TeQN8pLnanqsPd1-)
-
----
 
 ## 🖥 Backend (Signaling Server)  
 The signaling server is implemented using **Node.js, WebSocket, and JavaScript**. It manages the initial peer connection by maintaining a simple username-to-WebSocket reference mapping. This allows:  
@@ -61,6 +56,11 @@ An iOS version of this project is in development by our team and will be availab
 
 ---
 
+## 🎥 Video Tutorial & Playlist  
+
+📺 **Playlist for this Project:** [CodeWithKael Playlist](https://www.youtube.com/@codewithkael)
+
+---
 
 ## 🎬 About My YouTube Channel – @CodeWithKael  
 I create **programming tutorials**, **real-world projects**, and **tech-related content** to help developers learn and build amazing applications. From WebRTC and React to Android and Backend development, my goal is to simplify complex topics and make learning fun and practical.  
